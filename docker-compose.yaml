@@ -3,3 +3,12 @@ services:
     build: .
     ports:
       - '8082:8082'
+    networks:
+      - app2-network
+
+# Defining the app2-network which is a proxy to the external app1-network which is created by the app1 container.
+# In this way both app1 and app2 will be in the same network and hence can connect with each other using only service name
+networks:
+  app2-network:
+    name: app1-network
+    external: true

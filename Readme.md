@@ -1,6 +1,9 @@
 # Docker App 2
 This is a sample java spring boot application with dockerfile. This is to demonstrate how to containerize java applications using docker and kubernetes.
 
+## Note
+Kindly check the [readme](https://github.com/prat21/docker-app1) of **app1** for detailed instruction.
+
 ## Command to run container using docker
 ```
 docker run --name=<CONTAINER_NAME> --rm -p 8081:8081 <IMAGE_NAME>
