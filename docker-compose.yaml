@@ -1,6 +1,8 @@
 services:
   app2:
     build: .
+    image: prat21/app2
+    container_name: application2
     ports:
       - '8082:8082'
     networks:
